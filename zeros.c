@@ -3,7 +3,9 @@
 #include <stdio.h>
 
 int main(){
+    start:
     int var;
+    char answer;
     int counter = 0;
 
     printf("Welcome to the Zeros program.\n");
@@ -16,10 +18,15 @@ int main(){
         } else { 
             return counter;
         }
-
+        printf("The number of bits set is: ", counter);
+        printf("Continue (y/n)?: ");
+        scanf(" %c", &answer);
     
-
-
-
-
+        if(answer == "y"){
+            goto start;
+        } else {
+            printf("Exiting");
+        }
+    
+        return 0;
 }
