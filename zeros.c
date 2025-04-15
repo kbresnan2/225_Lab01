@@ -6,7 +6,7 @@ int main(){
     start:
     int var;
     char answer;
-    int counter = 0;
+    int counter= 0;
 
     printf("Welcome to the Zeros program.\n");
     printf("Please enter a number: \n");
