@@ -7,14 +7,15 @@ int main(){
     int num;
     char answer;
     int counter = 0;
+    int mask = 1;
 
     printf("Welcome to the CountOnes program. \n");
     printf("Please enter a number: \n" );
     scanf(" %d", &num);
 
-    while (counter <= 32) {
-        if(num != 0){
-        num << 1;
+    while (mask != 0) {
+        if(num && mask){
+        mask << 1;
         } else {
             counter +=1;
         };
