@@ -6,7 +6,7 @@ int main(){
     start:
     int var;
     char answer;
-    int counter= 0;
+    int counter = 0;
 
     printf("Welcome to the Zeros program.\n");
     printf("Please enter a number: \n");
@@ -17,7 +17,7 @@ int main(){
          var<<1;
         } else { 
             return counter;
-         }
+        }
         printf("The number of bits set is: ", counter);
         printf("Continue (y/n)?: ");
         scanf(" %c", &answer);
