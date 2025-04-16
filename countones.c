@@ -3,12 +3,10 @@
 #include <stdio.h>
 
 int main(){
-    
     int num;
     char answer;
     int counter = 0;
     int mask = 1;
-    
     
     printf("Welcome to the CountOnes program. \n");
     start:

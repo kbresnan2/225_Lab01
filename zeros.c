@@ -9,6 +9,7 @@ int main(){
     int counter = 0;
 
     printf("Welcome to the Zeros program.\n");
+    start:
     printf("Please enter a number: \n");
     scanf("%d", &var);
 
