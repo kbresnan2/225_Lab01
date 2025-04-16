@@ -21,7 +21,7 @@ int main(){
         };
     return counter;
     } 
-    printf("The number of bits set is: ", counter);
+    printf("The number of bits set is: %d", counter);
     printf("Continue (y/n)?: ");
     scanf(" %c", &answer);
 
