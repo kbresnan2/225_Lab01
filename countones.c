@@ -9,8 +9,9 @@ int main(){
     int counter = 0;
     int mask = 1;
     
-    start:
+    
     printf("Welcome to the CountOnes program. \n");
+    start:
     printf("Please enter a number: \n" );
     scanf("%d", &num);
 
