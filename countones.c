@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 int main(){
-    start:
+    
     int num;
     char answer;
     int counter = 0;
     int mask = 1;
     
-
+    start:
     printf("Welcome to the CountOnes program. \n");
     printf("Please enter a number: \n" );
     scanf("%d", &num);
