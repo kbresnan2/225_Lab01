@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(){
-    start:
+
     int var;
     char answer;
     int counter = 0;

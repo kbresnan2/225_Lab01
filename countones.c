@@ -8,14 +8,14 @@ int main(){
     char answer;
     int counter = 0;
     int mask = 1;
-    int count = 0;
+    
 
     printf("Welcome to the CountOnes program. \n");
     printf("Please enter a number: \n" );
     scanf(" %d", &num);
 
     while (mask != 0) {
-        if(num && mask){
+        if(num && mask ){
         mask << 1;
         } else {
             counter +=1;
