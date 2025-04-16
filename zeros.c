@@ -12,12 +12,13 @@ int main(){
     printf("Please enter a number: \n");
     scanf("%d", var);
 
-    while(counter < 32);
+    while(counter < 32){
         if (var != 0){
          var<<1;
         } else { 
             return counter;
         }
+    }
         printf("The number of bits set is: ", counter);
         printf("Continue (y/n)?: ");
         scanf(" %c", &answer);
