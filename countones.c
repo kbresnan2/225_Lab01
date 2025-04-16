@@ -8,6 +8,7 @@ int main(){
     char answer;
     int counter = 0;
     int mask = 1;
+    int count = 0;
 
     printf("Welcome to the CountOnes program. \n");
     printf("Please enter a number: \n" );
