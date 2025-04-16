@@ -10,7 +10,7 @@ int main(){
 
     printf("Welcome to the Zeros program.\n");
     printf("Please enter a number: \n");
-    scanf("%d", var);
+    scanf("%d", &var);
 
     while(counter < 32){
         if (var != 0){
