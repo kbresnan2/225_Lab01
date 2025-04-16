@@ -24,7 +24,7 @@ int main(){
         printf("Continue (y/n)?: ");
         scanf(" %c", &answer);
     
-        if(answer == "y"){
+        if(answer == 'y'){
             goto start;
         } else {
             printf("Exiting");
