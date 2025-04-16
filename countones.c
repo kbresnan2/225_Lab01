@@ -12,7 +12,7 @@ int main(){
 
     printf("Welcome to the CountOnes program. \n");
     printf("Please enter a number: \n" );
-    scanf(" %d", &num);
+    scanf("%d", &num);
 
     while (mask != 0) {
         if(num && mask ){
