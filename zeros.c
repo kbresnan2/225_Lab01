@@ -1,34 +1,34 @@
-//Andy Cai
-//Kaitlyn Bresnan
+/*Andy Cai*/
+/*Kaitlyn Bresnan*/
 #include <stdio.h>
 
-int main(){
+int main() {
 
-    int var;
     char answer;
     int counter = 0;
+    unsigned int mask = 2147483648;
+    int var;
 
-    printf("Welcome to the Zeros program.\n");
-    start:
-    printf("Please enter a number: \n");
-    scanf("%d", &var);
+    printf("Welcome to the Zeros program. \n");
 
-    while(counter < 32){
-        if (var != 0){
-         var<<1;
-        } else { 
-            return counter;
+    do {
+	counter = 0;
+	mask = 2147483648;
+
+	printf("\nPlease enter a number: ");
+	scanf("%d", &var);	
+
+	while ((var & mask) == 0) {
+        counter ++;
+        mask >>= 1;
         }
-    }
-        printf("The number of bits set is: %d", counter);
-        printf("Continue (y/n)?: ");
-        scanf(" %c", &answer);
-    
-        if(answer == 'y'){
-            goto start;
-        } else {
-            printf("Exiting");
-        }
-    
-        return 0;
+      
+	printf("The number of leading zeros is: %d\n", counter);
+
+	printf("Continue (y/n)?: ");
+	scanf(" %c", &answer);
+   } while (answer == 'y');
+
+    printf("\nExiting\n");
+    return 0;
 }
